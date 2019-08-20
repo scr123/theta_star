@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>theta_star</name>
+
+  <version>1.0.0</version>
+
+  <description>Theta star package with a ROS interface</description>
+
+  <author email="sean.GH1231@gmail.com">Sean Crutchlow</author>
+  <maintainer email="sean.GH1231@gmail.com">Sean Crutchlow</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2</depend>
+
+</package>

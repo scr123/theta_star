@@ -1,0 +1,10 @@
+<launch>
+	<!-- Load Theta Star Params -->
+	<rosparam file="$(find theta_star)/params/params.yaml" command="load" ns="theta_star"/>
+	<!-- ROS Wrapper Tests -->
+	<test test-name="ros_tests" pkg="theta_star" type="theta_star_rostest" name="theta_star"/>
+	<!-- Theta Star Library Unit Tests -->
+	<test test-name="theta_star_tests" pkg="theta_star" type="theta_star_test" name="theta_star"/>
+	<!-- Node Class Unit Tests -->
+	<test test-name="node_tests" pkg="theta_star" type="node_test" name="theta_star"/>
+</launch>

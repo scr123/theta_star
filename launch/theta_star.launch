@@ -1,0 +1,12 @@
+<launch>
+
+  <!-- Load ROS Params -->
+  <rosparam file="$(find theta_star)/params/params.yaml" command="load" ns="theta_star"/>
+
+  <!-- Theta Star -->
+  <arg name="node_name" default="theta_star"/>
+  <node pkg="theta_star" type="$(arg node_name)_node" name="$(arg node_name)">
+    <param name="node_name" value="$(arg node_name)"/>
+  </node>
+
+</launch>
